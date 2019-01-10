@@ -1,0 +1,32 @@
+public int[] AdapterToInt(ArrayAdapter<String> adapter)
+    {
+        int[] a = new int[adapter.getCount()];
+        //int[] a = new int[1];
+
+        for (int i = 0; i < adapter.getCount(); i++)
+        {
+            a[i] = Integer.valueOf(adapter.getItem(i));
+        }
+
+        return a;
+    }
+
+    public void onButtonClickGuardartempos(View view) {
+
+        //ListView exemplo = (ListView) findViewById(R.id.listviewexemplo);
+        //exemplo.setAdapter(adapter1);
+
+        int[] array;
+        array = AdapterToInt(adapter1);
+        TextView textoexemplo = (TextView) findViewById(R.id.textViewhorario);
+
+
+//        Intent myIntent = new Intent(getBaseContext(),   Main5Activity.class);
+//        myIntent.putExtra("carro1", AdapterToInt(adapter1));
+//        myIntent.putExtra("carro2", AdapterToInt(adapter2));
+//        myIntent.putExtra("carro3", AdapterToInt(adapter3));
+//        myIntent.putExtra("carro4", AdapterToInt(adapter4));
+//        myIntent.putExtra("carro5", AdapterToInt(adapter5));
+//         startActivity(myIntent);
+
+  }
